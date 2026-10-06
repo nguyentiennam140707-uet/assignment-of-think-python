@@ -1,8 +1,5 @@
-def is_anagram(word):
-    word = list(word)
-    if word[0:] == word[::-1]:
+def is_palindrome(word):
+    if list(reversed(word)) == list(word):
         return True
-    else: 
-        return False
-
-print(is_anagram('cbababc'))
+    return False
+print(is_palindrome("rotator"))
